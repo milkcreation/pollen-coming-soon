@@ -1,0 +1,51 @@
+{
+  "name": "pollen-solutions/coming-soon",
+  "description": "Coming Soon Component",
+  "homepage": "https://www.presstify.com/pollen-solutions/coming-soon/",
+  "keywords": [
+    "presstify",
+    "plugins",
+    "wordpress",
+    "contact",
+    "informations"
+  ],
+  "type": "presstify-plugin",
+  "time": "2020-12-27",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jordy Manner",
+      "email": "jordy@presstify.com",
+      "role": "Developper"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://composer.presstify.com/pollen-solutions/"
+    }
+  ],
+  "require": {
+    "composer/installers": "~1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Pollen\\ComingSoon\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Pollen\\ComingSoon\\Test\\": "tests"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config" : {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  }
+}
