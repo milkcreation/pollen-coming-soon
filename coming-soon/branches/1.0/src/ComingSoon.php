@@ -73,7 +73,6 @@ class ComingSoon implements ComingSoonContract
         throw new RuntimeException(sprintf('Unavailable %s instance', __CLASS__));
     }
 
-
     /**
      * @inheritDoc
      */
