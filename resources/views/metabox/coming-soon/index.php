@@ -1,6 +1,6 @@
 <?php
 /**
- * @var tiFy\Contracts\Metabox\MetaboxView $this
+ * @var tiFy\Metabox\MetaboxViewInterface $this
  */
 ?>
 <table class="Form-table">
@@ -10,8 +10,8 @@
         </th>
         <td>
             <?php echo field('toggle-switch', [
-                'name'  => $this->name(),
-                'value' => $this->value()
+                'name'  => $this->getName(),
+                'value' => $this->getValue()
             ]); ?>
         </td>
     </tr>
