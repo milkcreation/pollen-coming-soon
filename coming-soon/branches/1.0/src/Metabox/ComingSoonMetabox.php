@@ -14,19 +14,14 @@ class ComingSoonMetabox extends MetaboxDriver
     /**
      * @inheritDoc
      */
-    protected $alias = 'coming-soon';
+    protected $name = 'coming_soon';
 
     /**
      * @inheritDoc
      */
-    public function defaults(): array
+    public function getTitle(): string
     {
-        return array_merge(
-            parent::defaults(),
-            [
-                'title' => __('Accès au site', 'pollen-coming-soon'),
-            ]
-        );
+        return $this->title ?? __('Page d\'attente', 'pollen-coming-soon');
     }
 
     /**
@@ -34,6 +29,6 @@ class ComingSoonMetabox extends MetaboxDriver
      */
     public function viewDirectory(): string
     {
-        return $this->comingSoon()->resources("/views/metabox/{$this->getAlias()}");
+        return $this->comingSoon()->resources("/views/metabox/coming-soon");
     }
 }

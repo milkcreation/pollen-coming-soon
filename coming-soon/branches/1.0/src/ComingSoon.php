@@ -11,6 +11,7 @@ use RuntimeException;
 use tiFy\Contracts\Filesystem\LocalFilesystem;
 use tiFy\Support\Concerns\BootableTrait;
 use tiFy\Support\Concerns\ContainerAwareTrait;
+use tiFy\Support\Concerns\MetaboxManagerAwareTrait;
 use tiFy\Support\ParamsBag;
 use tiFy\Support\Proxy\Storage;
 
@@ -18,6 +19,7 @@ class ComingSoon implements ComingSoonContract
 {
     use BootableTrait;
     use ContainerAwareTrait;
+    use MetaboxManagerAwareTrait;
 
     /**
      * Instance de la classe.
