@@ -1,7 +1,7 @@
 {
   "name": "pollen-solutions/coming-soon",
   "description": "Coming Soon Component",
-  "homepage": "https://www.presstify.com/pollen-solutions/coming-soon/",
+  "homepage": "https://github.com/milkcreation/pollen-coming-soon.git",
   "keywords": [
     "presstify",
     "plugins",
@@ -9,19 +9,13 @@
     "coming soon",
     "landing page"
   ],
-  "time": "2020-01-04",
+  "time": "2021-09-14",
   "license": "MIT",
   "authors": [
     {
       "name": "Jordy Manner",
       "email": "jordy@presstify.com",
       "role": "Developper"
-    }
-  ],
-  "repositories": [
-    {
-      "type": "composer",
-      "url": "https://composer.presstify.com/pollen-solutions/"
     }
   ],
   "require": {
